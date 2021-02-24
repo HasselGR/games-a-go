@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&family=Roboto&display=swap');
+
+body{
+  background-color: #FFADAD;
+}
+
+
+h1{
+  text-align: center; 
+  font-family: 'Fredoka One', cursive;
+  
+}
+.grid-container{
+  display: grid;
+  grid-template-columns: auto auto;
+  padding: 35px;
+  grid-gap: 2rem 2rem;
+  
+  justify-items: center;
+  align-items: center;
+
+}
+
+.btn-primary{
+  font-family: 'Open Sans', sans-serif;
+  border-color: #BDB2FF;
+  background-color: #FFC6FF;
+}
+
+.btn-primary:hover{
+  background-color: #A0C4FF;
+}

@@ -1,0 +1,31 @@
+{
+  "name": "Games A Go",
+  "version": "0.0.0",
+  "manifest_version": 2,
+  "description": "My supreme extension",
+  "author": "David Gamboa",
+  "permissions" :[ "tabs", "<all_urls>", "activeTab"],
+  "homepage_url": "https://github.com/HasselGR/games-a-go",
+  "icons": {
+    "128": "images/icon.png"
+  },
+  "browser_action": {
+    "default_icon": "images/icon.png"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://*/*"
+      ],
+      "run_at": "document_end",
+      "js": [
+        "content.js"
+      ]
+    }
+  ],
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": true
+  },
+  "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'"
+}
