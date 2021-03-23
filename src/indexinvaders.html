@@ -5,17 +5,23 @@
   <title>Alien Invasion</title>
   <link rel="stylesheet" href="baseinvaders.css" type="text/css" />
   <link href='http://fonts.googleapis.com/css?family=Bangers' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  
   <meta name="viewport" content="width=device-width, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0"/>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 </head>
 <body>
-  <button id="quitbutton"> Quit </button>
-  <div id='container'>
-    <canvas id='game' width='320' height='480'></canvas>
-  </div>
-  <script src='engineinvaders.js'></script>
-  <script src="quitter.js"></script>
+   <div class="d-flex justify-content-between border-bottom border-light mr-3 ml-3 p-0 ">
+      <button id="quitbutton" class="border-0 rounded p-0 m-0">Menu</button>
+      <p class="mt-3 p-0"> <span class="fw-bold">JuegosGratis7</span>.com</p>
+   </div>
+   <hr>
+    <div id='container'>
+      <canvas id='game' width='320' height='480'></canvas>
+    </div>
+    <script src='engineinvaders.js'></script>
+    <script src="quitter.js"></script>
 </body>
 </html>
 

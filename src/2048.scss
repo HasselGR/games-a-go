@@ -1,8 +1,21 @@
 @import url(fonts/clear-sans.css);
+@font-face{
+  font-family: 'Proxima Nova Bold';
+  src: url('./fonts/ProximaNova-Bold.otf') format('truetype');
+}
+@font-face{
+  font-family: 'Montserrat Alternates Black';
+  src: url('./fonts/MontserratAlternates-Black.otf') format('truetype');
+}
+@font-face{
+  font-family: 'Montserrat Alternates Regular';
+  src: url('./fonts/MontserratAlternates-Regular.otf') format('truetype');
+}
+
 html, body {
   margin: 0;
   padding: 0;
-  background: #faf8ef;
+  background-image: linear-gradient(to right, #f15c29 0%, #f7941d 100%) !important;
   color: #776e65;
   font-family: "Clear Sans", "Helvetica Neue", Arial, sans-serif;
   font-size: 18px; }
@@ -20,7 +33,8 @@ h1.title {
   font-weight: bold;
   margin: 0;
   display: block;
-  float: left; }
+  float: left; 
+ color: white;}
 
 @-webkit-keyframes move-up {
   0% {
@@ -515,14 +529,17 @@ hr {
 .game-intro {
   float: left;
   line-height: 42px;
-  margin-bottom: 0; }
+  margin-bottom: 0; 
+  color: white;
+}
 
 
 
 .quitbutton {
-  background: #8f7a66;
-  border-radius: 3px;
-  padding: 0 20px;
+  font-family: 'Proxima Nova Bold';
+  font-size: 17px;
+  background: transparent;
+  border: none;
   text-decoration: none;
   color: #f9f6f2;
   height: 40px;
@@ -530,7 +547,14 @@ hr {
   display: block;
   text-align: center;
   font-weight: bold;
-  text-decoration: underline;
+  text-decoration: none;
+  cursor: pointer;
+}
+.flexbutton {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid white;
+  margin-bottom: 10px;
 }
 .restart-button {
   display: inline-block;

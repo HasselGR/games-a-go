@@ -1,25 +1,62 @@
 @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&family=Roboto&display=swap');
 
-body{
-  background-color: #FFADAD;
+@font-face{
+  font-family: 'Montserrat Alternates Black';
+  src: url('./fonts/MontserratAlternates-Black.otf') format('truetype');
+}
+@font-face{
+  font-family: 'Montserrat Alternates Regular';
+  src: url('./fonts/MontserratAlternates-Regular.otf') format('truetype');
 }
 
+@font-face{
+  font-family: 'Proxima Nova Bold';
+  src: url('./fonts/ProximaNova-Bold.otf') format('truetype');
+}
+
+body{
+  background-image: linear-gradient(to right, #f15c29 0%, #f7941d 100%);
+}
+p {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  font-family: 'Proxima Nova Bold';
+  font-weight: bold;
+  font-size: 15px;
+  color: white;
+}
 
 h1{
   text-align: center; 
-  font-family: 'Fredoka One', cursive;
-  
+   font-family: 'Proxima Nova Bold';
+  color: white; 
 }
+
+button img {
+  width: 55px;
+  height: 55px;
+}
+
+.bg-items {
+  background:  rgba(246, 248, 246, 0.2);
+  border-radius: 30px;
+}
+
 .grid-container{
   display: grid;
   grid-template-columns: auto auto;
-  padding: 35px;
-  grid-gap: 2rem 2rem;
+  padding: 2rem;
+  grid-gap: 2rem;
+  // margin-left: 1rem;
+  // margin-right: 1rem;
+  // margin-bottom: 2rem;
   
-  justify-items: center;
-  align-items: center;
-
+  // justify-items: center;
+  // align-items: center;
+  align-content: center;
+  justify-content: center;
 }
 
 .btn-primary{
@@ -30,4 +67,11 @@ h1{
 
 .btn-primary:hover{
   background-color: #A0C4FF;
+}
+
+//iconos
+.icons {
+  box-shadow: 0.3px 0.4px 6px black;
+  border-radius: 20px;
+  padding: 5px;
 }

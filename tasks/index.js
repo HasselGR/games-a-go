@@ -1,4 +1,5 @@
 export { clean } from './clean'
+export { fonts } from './fonts'
 export { scripts } from './scripts'
 export { styles } from './styles'
 export { markup } from './markup'

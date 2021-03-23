@@ -8,14 +8,22 @@ import chalk from 'chalk'
 export function watch() {
   const server = io.listen(process.env.WEBSOCKET_PORT)
   let socket
-  server.on('connection', (newSocket) => { socket = newSocket })
-
   async function triggerFileChange() {
-    socket.emit('file changed', () => {
-      fancyLog(chalk.yellow(`Extension reloaded!`))
+    server.on('connection', (newSocket) => {
+      if (!socket) {
+        socket = newSocket
+        socket.emit('file changed', () => {
+          fancyLog(chalk.yellow(`Extension reloaded!`))
+        })
+      } else {
+        socket.emit('file changed', () => {
+          fancyLog(chalk.yellow(`Extension reloaded!`))
+        })
+      }
     })
+    
   }
-
+  gulp.watch('src/**/*.css', gulp.series(scripts, triggerFileChange))
   gulp.watch('src/**/*.js', gulp.series(scripts, triggerFileChange))
   gulp.watch('src/**/*.scss', gulp.series(styles, triggerFileChange))
   gulp.watch(paths.manifest, gulp.series(manifest, triggerFileChange))

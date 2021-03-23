@@ -1,15 +1,38 @@
 
+@font-face{
+    font-family: 'Montserrat Alternates Black';
+    src: url('./fonts/MontserratAlternates-Black.otf') format('truetype');
+}
+@font-face{
+    font-family: 'Montserrat Alternates Regular';
+    src: url('./fonts/MontserratAlternates-Regular.otf') format('truetype');
+}
+
+@font-face{
+    font-family: 'Proxima Nova Bold';
+    src: url('./fonts/ProximaNova-Bold.otf') format('truetype');
+}
+
+body {
+    font-family: 'Proxima Nova Bold';
+    font-size: 20px;
+    background-image: linear-gradient(to right, #f15c29 0%, #f7941d 100%) !important;
+
+}
 
 html {
     width:350px;
     height:600px;
     zoom:70%;
 }
+p{
+    color: white !important;
+}
 canvas {
     display: block;
     margin: auto;
-    border: 5px solid black;
 }
+
 
 #playbutton {
     display: block;
@@ -18,6 +41,21 @@ canvas {
     font-family: Arial, sans-serif;
     font-size: 30px;
     font-weight: bold;
-    background-color: white;
     cursor: pointer;
+    color:white;
+    background-color:  rgba(246, 248, 246, 0.2);
 }
+
+#quitbutton {
+    background-color: transparent;
+    color: white !important;
+    font-family: 'Proxima Nova Bold' !important;
+    font-size: 20px !important;
+}
+
+.flexbutton {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid white;
+    margin-bottom: 10px;
+  }

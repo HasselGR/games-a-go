@@ -12,6 +12,20 @@
     font-family: "MS Sans Serif";
     src: url("./micross.ttf");
 }
+@font-face{
+    font-family: 'Montserrat Alternates Black';
+    src: url('./fonts/MontserratAlternates-Black.otf') format('truetype');
+}
+@font-face{
+    font-family: 'Montserrat Alternates Regular';
+    src: url('./fonts/MontserratAlternates-Regular.otf') format('truetype');
+}
+
+@font-face{
+    font-family: 'Proxima Nova Bold';
+    src: url('./fonts/ProximaNova-Bold.otf') format('truetype');
+}
+
 
 * {
     -o-user-select: none;
@@ -45,17 +59,16 @@
     height: 700px;
 } */
 body {
-    background-color: #0D8584;
+    background-image: linear-gradient(to right, #f15c29 0%, #f7941d 100%);
+    
 }
 
 #board {
     background-color: lightgray;
 }
 
-button {
-    font-family: 'MS Sans Serif';
+button {    
     text-align: left;
-    font-size: 14px;
     height: 30px;
     width: 100px;
     background-color: #BFBFBF;
@@ -115,7 +128,7 @@ button:hover {
     text-align: center;
     position: fixed;
     height: 60px;
-    background-color: #BFBFBF;
+    background-image: linear-gradient(to right, #f15c29 0%, #f7941d 100%);
     bottom: 0px;
     left: 0px;
     right: 0px;
@@ -123,7 +136,7 @@ button:hover {
 }
 
 .menu a {
-    font-family: 'MS Sans Serif';
+    font-family: 'Proxima Nova Bold';
     color: black;
     text-decoration: none;
     font-size: 14px;
@@ -211,7 +224,7 @@ td {
 }
 
 #window-title {
-    font-family: 'MS Sans Serif';
+    font-family: 'Proxima Nova Bold';
     letter-spacing: .5px;
     float: left;
     color: #D5DEF3;
@@ -224,3 +237,12 @@ td {
     background: linear-gradient(to right, rgba(33,41,89,1) 0%,rgba(33,41,89,1) 11%,rgba(80,114,161,1) 56%,rgba(117,172,219,0.7) 92%,rgba(125,185,232,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#212959', endColorstr='#007db9e8',GradientType=1 ); /* IE6-9 */
 }
+
+#quitbutton {
+    background-color: transparent;
+    color: white;
+    /* font-family: 'Proxima Nova Bold' !important; */
+    font-size: 23px !important;
+    font-weight:500;
+}
+

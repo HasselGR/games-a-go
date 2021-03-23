@@ -2,12 +2,19 @@
 <html>
     <head>
         <title>HTML5 Tetris</title>
-        <link rel='stylesheet' href='styletetris.css' />
+         <!-- <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/> -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <link rel="stylesheet" href="styletetris.css" />
+
     </head>
     <body>
-        <button id="quitbutton">Quit</button>
-        <button id="playbutton">Play</button>
-        <canvas width='300' height='600'></canvas>
+        <div class="d-flex justify-content-between border-bottom border-light mr-3 ml-3 mt-3">
+            <button id="quitbutton" class="border-0 rounded" style="font-family: 'Proxima Nova Bold' !important;
+            font-size: 20px !important;">Menu</button>
+            <p style="color: white;  margin: 10px;"> <span style="font-weight: bold;">JuegosGratis7</span>.com</p>
+        </div>
+        <button id="playbutton" class="shadow mb-2 border-0 rounded">Play</button>
+        <canvas width='300' height='600' class="border-0 mb-2 rounded shadow p1"></canvas>
         <script src='javastetris/tetris.js'></script>
         <script src='javastetris/controller.js'></script>
         <script src='javastetris/render.js'></script>

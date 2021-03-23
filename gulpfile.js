@@ -1,5 +1,5 @@
 import gulp from 'gulp'
-import { clean, scripts, styles, markup, images, manifest, watch, bundle, javas, javastetris, imagesminesweeper, cssminesweeper, jsminesweeper } from './tasks'
+import { clean, scripts, fonts, styles, markup, images, manifest, watch, bundle, javas, javastetris, imagesminesweeper, cssminesweeper, jsminesweeper } from './tasks'
 import dotenv from 'dotenv'
 dotenv.config()
 
@@ -21,6 +21,7 @@ export const paths = {
     'src/2048.scss',
     'src/baseinvaders.css',
   ],
+  fonts: 'src/fonts/**/*',
 
   images: 'src/images/**/*',
   
@@ -47,6 +48,6 @@ export const paths = {
 }
 
 
-gulp.task('build', gulp.series(clean, gulp.parallel(scripts, styles, markup, images, manifest, javas, javastetris, cssminesweeper, imagesminesweeper, jsminesweeper)))
+gulp.task('build', gulp.series(clean, gulp.parallel(scripts, fonts, styles, markup, images, manifest, javas, javastetris, cssminesweeper, imagesminesweeper, jsminesweeper)))
 gulp.task('dev', gulp.series('build', watch))
 gulp.task('bundle', gulp.series('build', bundle))
