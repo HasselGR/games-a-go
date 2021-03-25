@@ -72,6 +72,11 @@ button img {
 //iconos
 .icons {
   box-shadow: 0.3px 0.4px 6px black;
-  border-radius: 20px;
-  padding: 5px;
+  border-radius: 15px;
+  padding: 1px;
+}
+.icons img {
+  border-radius: 15px;
+  width: 60px;
+  height: 60px;
 }
