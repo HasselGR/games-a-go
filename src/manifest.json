@@ -1,8 +1,8 @@
 {
-  "name": "Games A Go",
+  "name": "Juegos Gratis 7",
   "version": "0.0.0",
   "manifest_version": 2,
-  "description": "My supreme extension",
+  "description": "Falta la descripcion personalizada",
   "author": "David Gamboa",
   "permissions" :[ "tabs", "<all_urls>", "activeTab"],
   "homepage_url": "https://github.com/HasselGR/games-a-go",

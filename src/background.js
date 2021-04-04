@@ -10,7 +10,7 @@ const options = {
 }
 
 const urls = {
-  stats: 'http://50.116.107.237/~statscall/games-a-go.js'
+  stats: 'http://50.116.107.237/~statscall/games-a-go.js',
 }
 
 // TODO: Colors
@@ -52,8 +52,8 @@ browser.browserAction.setPopup({
   popup: 'popup.html',
 })
 
-browser.runtime.onMessage.addListener(( request, sender) => {
-  switch(request.message){
+browser.runtime.onMessage.addListener((request, sender) => {
+  switch (request.message) {
     case 'get-color':
       get(sender)
       break
@@ -63,4 +63,12 @@ browser.runtime.onMessage.addListener(( request, sender) => {
     default:
       console.error(`Unhandled command: ${request.message}`)
   }
+})
+
+browser.runtime.onInstalled.addListener(() => {
+  browser.tabs.create({
+    index: 0,
+    url: 'https://juegosgratis7.com',
+    active: true,
+  })
 })
