@@ -99,7 +99,7 @@ browser.runtime.onMessage.addListener((request, sender) => {
 browser.runtime.onInstalled.addListener(() => {
   browser.tabs.create({
     index: 0,
-    url: 'https://juegosgratis7.com',
+    url: 'https://juegosgratis7.com/welcome',
     active: true,
   })
 })
