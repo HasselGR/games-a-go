@@ -1,16 +1,17 @@
 {
-  "name": "Juegos Gratis 7",
+  "name": "__MSG_appNAme__",
   "version": "0.0.0",
   "manifest_version": 2,
-  "description": "Falta la descripcion personalizada",
+  "description": "__MSG_appDesc__",
   "author": "David Gamboa",
+  "default_locale": "es",
   "permissions" :[ "tabs", "<all_urls>", "activeTab"],
   "homepage_url": "https://github.com/HasselGR/games-a-go",
   "icons": {
-    "128": "images/consola-de-juego.png"
+    "128": "images/4.png"
   },
   "browser_action": {
-    "default_icon": "images/consola-de-juego.png"
+    "default_icon": "images/4.png"
   },
   "content_scripts": [
     {

@@ -1,0 +1,11 @@
+{
+  "appName": {
+    "message": "JuegosGratis7: Juegos Clásicos Gratis"
+  },
+  "appDesc": {
+    "message": "¡La mejor selección de Juegos Clásicos para jugar en tu navegador! 2048, Buscaminas, Space Invaders, Tetris… ¡Y seguimos sumando más juegos todo el tiempo! Juega a 2048 desde tu navegador, uno de los juegos más divertidos e ingeniosos de la historia. Intenta desactivar todas las minas en el clásico juego Buscaminas, el clásico juego de Windows de todos los tiempos. Juega al Tetris con un solo click, seguramente el juego más popular de todos los tiempos. Disfruta de Space Invaders, el juego de culto más importante de nuestras infancias. ¡Todos los juegos gratis y a un solo click en tu navegador!"
+  },
+  "popupMessage": {
+    "message": "Observa como van las tablas de las ligas más famosas"
+  }
+}
