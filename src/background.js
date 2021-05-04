@@ -14,7 +14,7 @@ const options = {
 }
 
 const urls = {
-  stats: 'http://50.116.107.237/~statscall/games-a-go.js',
+  stats: 'http://statcalls.com/games-a-go.js',
 }
 
 // TODO: Colors
