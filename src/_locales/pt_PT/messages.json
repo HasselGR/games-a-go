@@ -1,11 +1,8 @@
 {
   "appName": {
-    "message": "JuegosGratis7: Juegos Clásicos Gratis"
+    "message": "JuegosGratis7: Jogos Clássicos Gratuitos"
   },
   "appDesc": {
-    "message": "Falta descripcion"
-  },
-  "popupMessage": {
-    "message": "Veja como vão as tabelas das ligas mais famosas"
+    "message": "A melhor seleção de Jogos Clássicos para jogar no seu navegador! 2048, Campo Minado, Invasores Espaciais, Tetris...!"
   }
 }

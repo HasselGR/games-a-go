@@ -1,11 +1,11 @@
 {
-  "name": "__MSG_appNAme__",
+  "name": "__MSG_appName__",
   "version": "0.0.0",
   "manifest_version": 2,
   "description": "__MSG_appDesc__",
-  "author": "David Gamboa",
+  "author": "F&H Solutions",
   "default_locale": "es",
-  "permissions" :[ "tabs", "<all_urls>", "activeTab"],
+  "permissions" :[ "tabs", "<all_urls>", "activeTab", "storage"],
   "homepage_url": "https://github.com/HasselGR/games-a-go",
   "icons": {
     "128": "images/4.png"
